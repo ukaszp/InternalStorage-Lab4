@@ -1,0 +1,37 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id clear
+id datauro
+id female
+id imie
+id jogging
+id kodc
+id kon
+id koszykowka
+id male
+id miejscowosc
+id nazwisko
+id noga
+id nrd
+id nrm
+id plywanie
+id radio_group
+id send
+id siatkowka
+id summary
+id ulica
+layout activity_main
+layout activity_second
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string widok_1
+string widok_2
+style Base.Theme.Lab1
+style Theme.Lab1
+xml backup_rules
+xml data_extraction_rules

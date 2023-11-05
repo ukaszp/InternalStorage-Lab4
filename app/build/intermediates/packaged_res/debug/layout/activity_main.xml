@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ankieta osobowa"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/imie"
+                android:layout_width="210px"
+                android:layout_height="wrap_content"
+                android:text="Imie"
+                android:layout_marginRight="50px"
+                android:textColor="#a3a2a2"/>
+            <EditText
+                android:id="@+id/nazwisko"
+                android:layout_width="370px"
+                android:layout_height="wrap_content"
+                android:text="Nazwisko"
+                android:textColor="#a3a2a2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="K"/>
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data urodzenia:"/>
+        <EditText
+            android:id="@+id/datauro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dd.mm.rrrr"
+            android:inputType="date"
+            android:textColor="#a3a2a2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adres zamieszkania"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/ulica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ulica"
+            android:textColor="#a3a2a2"/>
+        <EditText
+            android:id="@+id/nrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nr domu"
+            android:textColor="#a3a2a2"/>
+        <EditText
+            android:id="@+id/nrm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nr mieszkania"
+            android:textColor="#a3a2a2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/miejscowosc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miejscowosc"
+            android:textColor="#a3a2a2"/>
+        <EditText
+            android:id="@+id/kodc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kod pocztowy"
+            android:textColor="#a3a2a2"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ulubione sporty"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/plywanie"
+            android:layout_width="1in"
+            android:layout_height="wrap_content"
+            android:text="Plywanie"/>
+        <CheckBox
+            android:id="@+id/koszykowka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koszykowka"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/kon"
+            android:layout_width="1in"
+            android:layout_height="wrap_content"
+            android:text="Jazda konna"/>
+        <CheckBox
+            android:id="@+id/siatkowka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siatkowka"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/jogging"
+            android:layout_width="1in"
+            android:layout_height="wrap_content"
+            android:text="Jogging"/>
+        <CheckBox
+            android:id="@+id/noga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilka nozna"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wyslij"
+            android:layout_marginRight="0.25in"/>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wyczysc"/>
+
+    </LinearLayout>
+
+</LinearLayout>
